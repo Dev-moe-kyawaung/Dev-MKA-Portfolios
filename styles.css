@@ -1,0 +1,90 @@
+/**
+ * Dev-MKA-Portfolios — styles.css
+ * Global overrides & CSS custom properties
+ * Moe Kyaw Aung · github.com/dev-moe-kyawaung
+ */
+
+/* ─── Design Tokens ──────────────────────────────── */
+:root {
+  --profile-img: url('https://res.cloudinary.com/dye5qpwii/image/upload/v1778527878/IMG_20260430_053105_uef0yr.png');
+
+  /* Brand */
+  --color-bs-blue:      #0d6efd;
+  --color-react-cyan:   #61dafb;
+  --color-html-orange:  #ff5a00;
+  --color-flutter-sky:  #0ea5e9;
+  --color-gatsby-purple:#663399;
+  --color-kotlin-orange:#e77e00;
+  --color-angular-red:  #dd0031;
+  --color-tw-cyan:      #06b6d4;
+  --color-ruby-red:     #cc342d;
+  --color-gh-blue:      #58a6ff;
+
+  /* Typography */
+  --font-display: 'Syne', 'Plus Jakarta Sans', sans-serif;
+  --font-mono:    'JetBrains Mono', 'Space Mono', monospace;
+  --font-serif:   'Cormorant Garamond', 'Playfair Display', serif;
+  --font-body:    'DM Sans', sans-serif;
+
+  /* Spacing */
+  --section-pad: clamp(60px, 8vw, 120px);
+}
+
+/* ─── Active Nav Link ────────────────────────────── */
+.main-nav a.nav-active {
+  background: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+/* ─── Fade-in animation ──────────────────────────── */
+.fade-in {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s cubic-bezier(.22,1,.36,1),
+              transform 0.65s cubic-bezier(.22,1,.36,1);
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ─── Scrollbar ──────────────────────────────────── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #0a0a0a; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #555; }
+
+/* ─── Selection ──────────────────────────────────── */
+::selection { background: #0d6efd33; color: #fff; }
+
+/* ─── Responsive Helpers ─────────────────────────── */
+@media (max-width: 768px) {
+  .react-wrap,
+  .html-grid,
+  .kotlin-wrap,
+  .tw-hero,
+  .ruby-wrap,
+  .gatsby-hero,
+  .gh-layout {
+    grid-template-columns: 1fr !important;
+  }
+  .next-grid,
+  .ng-module-grid,
+  .flutter-card-row,
+  .gh-repos,
+  .gatsby-card-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .next-heading { font-size: clamp(36px, 10vw, 80px) !important; }
+  .gh-avatar { width: 160px !important; height: 160px !important; }
+  .gh-grid { grid-template-columns: repeat(26, 12px) !important; }
+  .html-name { font-size: 38px !important; }
+  .gatsby-name { font-size: 42px !important; }
+}
+
+@media (max-width: 480px) {
+  .section-label { display: none; }
+  .main-nav a { font-size: 10px; padding: 5px 8px; }
+  .flutter-card-row { grid-template-columns: 1fr !important; }
+}

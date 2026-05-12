@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moe Kyaw Aung — Dev-MKA-Portfolios</title>
+<meta name="description" content="Moe Kyaw Aung | Full Stack Developer — 11 Portfolio Styles: Bootstrap, React, Flutter, Next.js, Angular, Gatsby, Kotlin, TailwindCSS, Ruby, HTML/CSS, GitHub Profile">
+<meta name="author" content="Moe Kyaw Aung">
+<meta property="og:title" content="Moe Kyaw Aung — Dev-MKA-Portfolios">
+<meta property="og:description" content="11 မတူညီတဲ့ Portfolio Design Styles by Moe Kyaw Aung">
+<meta property="og:image" content="https://res.cloudinary.com/dye5qpwii/image/upload/v1778527878/IMG_20260430_053105_uef0yr.png">
+<meta property="og:url" content="https://dev-moe-kyawaung.github.io/Dev-MKA-Portfolios/">
+<link rel="canonical" href="https://dev-moe-kyawaung.github.io/Dev-MKA-Portfolios/">
+<link rel="icon" href="https://res.cloudinary.com/dye5qpwii/image/upload/v1778527878/IMG_20260430_053105_uef0yr.png" type="image/png">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;700&family=JetBrains+Mono:wght@400;700&family=Syne:wght@400;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Unbounded:wght@400;700;900&family=IBM+Plex+Mono:wght@400;700&family=Raleway:wght@300;400;700;900&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  :root { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', sans-serif; background: #0a0a0a; color: #fff; }
+
+  /* ===== NAV ===== */
+  .main-nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+    background: rgba(10,10,10,0.95); backdrop-filter: blur(20px);
+    border-bottom: 1px solid #222; padding: 16px 0;
+  }
+  .main-nav ul {
+    display: flex; gap: 6px; justify-content: center; list-style: none;
+    flex-wrap: wrap; padding: 0 20px;
+  }
+  .main-nav a {
+    display: inline-block; padding: 6px 12px; border-radius: 20px;
+    font-size: 11px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase;
+    text-decoration: none; transition: all 0.2s;
+    color: #999; border: 1px solid #333;
+  }
+  .main-nav a:hover { background: #fff; color: #000; border-color: #fff; }
+
+  /* ===== SECTION WRAPPER ===== */
+  .section { min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; }
+  .section-label {
+    position: absolute; top: 80px; left: 50%; transform: translateX(-50%);
+    font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+    padding: 6px 16px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.5); white-space: nowrap;
+  }
+
+  /* ======================== */
+  /* 1. BOOTSTRAP PORTFOLIO   */
+  /* ======================== */
+  #bootstrap {
+    background: #0d1117;
+    background-image: radial-gradient(ellipse at 20% 50%, rgba(13,110,253,0.15) 0%, transparent 60%);
+  }
+  .bs-container {
+    max-width: 900px; padding: 40px 20px; text-align: center;
+  }
+  .bs-avatar {
+    width: 120px; height: 120px; border-radius: 50%; border: 3px solid #0d6efd;
+    margin: 0 auto 24px; display: block; object-fit: cover;
+    box-shadow: 0 0 0 6px rgba(13,110,253,0.2);
+  }
+  .bs-badge {
+    display: inline-block; padding: 4px 12px; border-radius: 4px; font-size: 12px;
+    font-weight: 600; margin: 4px;
+  }
+  .bs-badge.primary { background: #0d6efd; color: #fff; }
+  .bs-badge.success { background: #198754; color: #fff; }
+  .bs-badge.info { background: #0dcaf0; color: #000; }
+  .bs-badge.warning { background: #ffc107; color: #000; }
+  .bs-name { font-size: 40px; font-weight: 700; color: #fff; font-family: 'Plus Jakarta Sans', sans-serif; }
+  .bs-title { color: #0d6efd; font-size: 18px; margin: 8px 0 20px; }
+  .bs-bio { color: #adb5bd; line-height: 1.7; max-width: 600px; margin: 0 auto 28px; }
+  .bs-card {
+    background: #161b22; border: 1px solid #30363d; border-radius: 8px;
+    padding: 20px; margin: 16px 0; text-align: left;
+  }
+  .bs-card h5 { color: #58a6ff; margin-bottom: 12px; font-size: 14px; letter-spacing: 0.05em; text-transform: uppercase; }
+  .bs-btn {
+    display: inline-block; padding: 10px 24px; border-radius: 6px; font-weight: 600;
+    text-decoration: none; margin: 6px; font-size: 14px; transition: all 0.2s;
+    border: 2px solid transparent;
+  }
+  .bs-btn.primary { background: #0d6efd; color: #fff; }
+  .bs-btn.outline { border-color: #0d6efd; color: #0d6efd; background: transparent; }
+  .bs-progress { background: #21262d; border-radius: 4px; height: 8px; margin: 8px 0; }
+  .bs-progress-bar { height: 100%; border-radius: 4px; background: #0d6efd; }
+  .skill-row { display: flex; justify-content: space-between; color: #adb5bd; font-size: 13px; margin-bottom: 4px; }
+
+  /* ======================== */
+  /* 2. REACT + JSX            */
+  /* ======================== */
+  #react { background: #0f0f23; }
+  .react-wrap {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 40px;
+    max-width: 1000px; padding: 40px 20px; align-items: center;
+  }
+  .react-avatar-ring {
+    width: 160px; height: 160px; margin: 0 auto 20px;
+    background: conic-gradient(#61dafb, #764abc, #f7df1e, #61dafb);
+    border-radius: 50%; padding: 4px; animation: spin 8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .react-avatar-inner { background: #0f0f23; border-radius: 50%; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
+  .react-avatar-inner img { width: 148px; height: 148px; border-radius: 50%; object-fit: cover; }
+  .react-name { font-family: 'Syne', sans-serif; font-size: 42px; font-weight: 800; }
+  .react-highlight { color: #61dafb; }
+  .react-subtitle { color: #888; font-size: 16px; margin: 12px 0; font-family: 'JetBrains Mono', monospace; }
+  .component-box {
+    background: #1a1a2e; border: 1px solid #61dafb33; border-radius: 12px;
+    padding: 20px; margin: 12px 0; font-family: 'JetBrains Mono', monospace;
+    font-size: 12px; position: relative;
+  }
+  .component-box::before {
+    content: '⚛ Component'; position: absolute; top: -10px; left: 16px;
+    background: #61dafb; color: #0f0f23; font-size: 10px; padding: 2px 8px;
+    border-radius: 4px; font-weight: 700;
+  }
+  .jsx-keyword { color: #c792ea; }
+  .jsx-component { color: #82aaff; }
+  .jsx-string { color: #c3e88d; }
+  .jsx-tag { color: #89ddff; }
+  .hooks-row { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0; }
+  .hook-pill {
+    padding: 6px 14px; background: rgba(97,218,251,0.1); border: 1px solid #61dafb44;
+    border-radius: 20px; font-size: 12px; font-family: 'JetBrains Mono', monospace;
+    color: #61dafb;
+  }
+
+  /* ======================== */
+  /* 3. HTML + CSS            */
+  /* ======================== */
+  #htmlcss {
+    background: #1a0a00;
+    background-image: radial-gradient(ellipse at 80% 20%, rgba(255,90,0,0.2) 0%, transparent 60%);
+  }
+  .html-grid {
+    display: grid; grid-template-columns: 340px 1fr; gap: 60px;
+    max-width: 1000px; padding: 40px 20px; align-items: center;
+  }
+  .html-card {
+    background: linear-gradient(135deg, #2a1500 0%, #1a0a00 100%);
+    border: 1px solid #ff5a0044; border-radius: 0; padding: 40px;
+    clip-path: polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px));
+  }
+  .html-avatar {
+    width: 100px; height: 100px; border-radius: 0; object-fit: cover;
+    border: 3px solid #ff5a00; margin-bottom: 20px;
+    clip-path: polygon(10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%);
+  }
+  .html-name { font-family: 'Bebas Neue', sans-serif; font-size: 52px; color: #ff5a00; letter-spacing: 2px; }
+  .html-role { font-size: 13px; letter-spacing: 0.3em; color: #ff5a0099; text-transform: uppercase; margin-bottom: 20px; }
+  .css-property { font-family: 'Space Mono', monospace; font-size: 12px; line-height: 2; color: #ccc; }
+  .css-prop { color: #ff5a00; }
+  .css-val { color: #ffd700; }
+  .html-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 20px; }
+  .html-tag {
+    padding: 4px 10px; border: 1px solid #ff5a0066; color: #ff5a00;
+    font-size: 11px; font-family: 'Space Mono', monospace;
+    background: rgba(255,90,0,0.05);
+  }
+  .html-right h2 { font-family: 'Bebas Neue', sans-serif; font-size: 64px; color: #fff; line-height: 0.9; }
+  .html-right p { color: #999; line-height: 1.8; margin: 20px 0; font-size: 14px; }
+
+  /* ======================== */
+  /* 4. FLUTTER WEB           */
+  /* ======================== */
+  #flutter {
+    background: #071524;
+    background-image: radial-gradient(circle at 50% 50%, rgba(2,132,199,0.15) 0%, transparent 70%);
+  }
+  .flutter-wrap { max-width: 900px; padding: 40px 20px; text-align: center; }
+  .flutter-fab {
+    width: 140px; height: 140px; border-radius: 28px; margin: 0 auto 30px;
+    background: linear-gradient(135deg, #0ea5e9, #0284c7); padding: 6px;
+    box-shadow: 0 20px 60px rgba(2,132,199,0.4);
+    display: flex; align-items: center; justify-content: center;
+    animation: flutter-float 3s ease-in-out infinite;
+  }
+  @keyframes flutter-float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-12px); } }
+  .flutter-fab img { width: 128px; height: 128px; border-radius: 22px; object-fit: cover; }
+  .flutter-name { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 48px; font-weight: 800; }
+  .flutter-sub { color: #0ea5e9; font-size: 16px; font-weight: 500; margin: 8px 0 30px; }
+  .flutter-chips { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin: 20px 0; }
+  .flutter-chip {
+    padding: 8px 20px; border-radius: 40px; font-size: 13px; font-weight: 500;
+    background: rgba(14,165,233,0.1); border: 1px solid rgba(14,165,233,0.3);
+    color: #38bdf8; display: flex; align-items: center; gap: 6px;
+  }
+  .flutter-chip::before { content: '◆'; font-size: 8px; }
+  .flutter-card-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-top: 30px; }
+  .flutter-card {
+    background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px; padding: 24px; text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .flutter-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(14,165,233,0.2); }
+  .flutter-card-icon { font-size: 28px; margin-bottom: 12px; }
+  .flutter-card h4 { font-size: 16px; font-weight: 700; margin-bottom: 6px; color: #e2e8f0; }
+  .flutter-card p { font-size: 12px; color: #64748b; line-height: 1.6; }
+
+  /* ======================== */
+  /* 5. GATSBY.JS             */
+  /* ======================== */
+  #gatsby {
+    background: #1a0d2e;
+    background-image: radial-gradient(ellipse at 30% 70%, rgba(102,51,153,0.3) 0%, transparent 60%);
+  }
+  .gatsby-container { max-width: 1000px; padding: 40px 20px; }
+  .gatsby-hero { display: grid; grid-template-columns: 1fr 400px; gap: 60px; align-items: center; margin-bottom: 60px; }
+  .gatsby-name { font-family: 'Playfair Display', serif; font-size: 60px; font-weight: 900; line-height: 1; }
+  .gatsby-gradient { background: linear-gradient(135deg, #663399, #ff6b9d, #ffcc02); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .gatsby-bio { color: #a78bca; line-height: 1.8; font-size: 16px; margin: 20px 0; }
+  .gatsby-links { display: flex; gap: 12px; flex-wrap: wrap; }
+  .gatsby-link {
+    padding: 10px 24px; border-radius: 4px; text-decoration: none; font-weight: 600;
+    font-size: 14px; transition: all 0.2s;
+  }
+  .gatsby-link.primary { background: #663399; color: #fff; }
+  .gatsby-link.ghost { border: 2px solid #663399; color: #663399; }
+  .gatsby-card-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .gatsby-article {
+    background: rgba(255,255,255,0.03); border: 1px solid rgba(102,51,153,0.3);
+    border-radius: 8px; padding: 24px; border-left: 3px solid #663399;
+  }
+  .gatsby-article h4 { font-size: 18px; margin-bottom: 8px; color: #e9d5ff; }
+  .gatsby-article p { font-size: 13px; color: #7c6d8e; line-height: 1.6; }
+  .gatsby-tag { display: inline-block; padding: 2px 10px; background: rgba(102,51,153,0.2); border-radius: 4px; font-size: 11px; color: #c4b5fd; margin: 4px 4px 0 0; }
+  .gatsby-avatar {
+    width: 100%; aspect-ratio: 1; border-radius: 12px; object-fit: cover;
+    border: 2px solid rgba(102,51,153,0.5);
+    filter: saturate(0.8);
+  }
+
+  /* ======================== */
+  /* 6. KOTLIN + KTOR         */
+  /* ======================== */
+  #kotlin {
+    background: #0d0d0d;
+    background-image: linear-gradient(135deg, rgba(231,94,0,0.1) 0%, rgba(186,45,254,0.1) 100%);
+  }
+  .kotlin-wrap { max-width: 1000px; padding: 40px 20px; display: grid; grid-template-columns: 1fr 380px; gap: 60px; align-items: center; }
+  .kotlin-terminal {
+    background: #111; border: 1px solid #333; border-radius: 8px; overflow: hidden;
+  }
+  .kotlin-terminal-bar { background: #222; padding: 10px 16px; display: flex; gap: 6px; align-items: center; }
+  .t-dot { width: 12px; height: 12px; border-radius: 50%; }
+  .t-dot.r { background: #ff5f56; } .t-dot.y { background: #ffbd2e; } .t-dot.g { background: #27c93f; }
+  .kotlin-code { padding: 20px; font-family: 'JetBrains Mono', monospace; font-size: 12px; line-height: 2; }
+  .k-kw { color: #e77e00; } .k-fn { color: #a9b7c6; } .k-cls { color: #ffc66d; }
+  .k-str { color: #6a8759; } .k-com { color: #555; } .k-type { color: #ba2dfe; }
+  .kotlin-right { }
+  .kotlin-logo-wrap { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+  .kotlin-avatar { width: 80px; height: 80px; border-radius: 12px; object-fit: cover; }
+  .kotlin-name { font-family: 'Unbounded', sans-serif; font-size: 28px; font-weight: 700; }
+  .kotlin-subtitle { color: #e77e00; font-size: 13px; font-family: 'JetBrains Mono', monospace; margin-top: 4px; }
+  .kotlin-desc { color: #888; line-height: 1.7; font-size: 14px; margin: 20px 0; }
+  .kotlin-skill-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .kotlin-skill-item {
+    padding: 10px 14px; background: rgba(255,255,255,0.03); border: 1px solid #222;
+    border-radius: 6px; font-size: 12px; font-family: 'JetBrains Mono', monospace;
+    color: #ccc; display: flex; align-items: center; gap: 8px;
+  }
+  .kotlin-skill-item::before { content: '▸'; color: #e77e00; }
+
+  /* ======================== */
+  /* 7. NEXT.JS               */
+  /* ======================== */
+  #nextjs { background: #000; }
+  .next-wrap { max-width: 1000px; padding: 40px 20px; }
+  .next-hero { min-height: 80vh; display: flex; flex-direction: column; justify-content: center; border-bottom: 1px solid #1a1a1a; padding-bottom: 80px; }
+  .next-eyebrow { font-size: 12px; letter-spacing: 0.2em; color: #666; text-transform: uppercase; margin-bottom: 30px; display: flex; align-items: center; gap: 12px; }
+  .next-eyebrow::before { content: ''; display: block; width: 40px; height: 1px; background: #666; }
+  .next-heading { font-family: 'Syne', sans-serif; font-size: 80px; font-weight: 900; line-height: 0.9; letter-spacing: -3px; }
+  .next-heading span { display: block; }
+  .next-heading .dim { color: #333; }
+  .next-meta { display: grid; grid-template-columns: auto 1fr; gap: 40px; align-items: center; margin-top: 50px; }
+  .next-avatar-stack { display: flex; }
+  .next-avatar-wrap { width: 56px; height: 56px; border-radius: 50%; border: 2px solid #000; }
+  .next-avatar-wrap img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+  .next-bio { font-size: 15px; color: #666; line-height: 1.8; max-width: 500px; }
+  .next-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: #1a1a1a; margin-top: 60px; }
+  .next-cell { background: #000; padding: 40px; transition: background 0.2s; }
+  .next-cell:hover { background: #0a0a0a; }
+  .next-cell-num { font-size: 48px; font-weight: 900; color: #222; font-family: 'Syne', sans-serif; margin-bottom: 16px; }
+  .next-cell h4 { font-size: 18px; margin-bottom: 8px; }
+  .next-cell p { color: #666; font-size: 13px; line-height: 1.6; }
+
+  /* ======================== */
+  /* 8. ANGULAR               */
+  /* ======================== */
+  #angular {
+    background: #0a0608;
+    background-image: radial-gradient(ellipse at 70% 30%, rgba(221,0,49,0.15) 0%, transparent 60%);
+  }
+  .angular-wrap { max-width: 900px; padding: 40px 20px; text-align: center; }
+  .angular-shield {
+    width: 120px; height: 120px; margin: 0 auto 30px;
+    background: linear-gradient(180deg, #dd0031 0%, #c3002f 100%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex; align-items: center; justify-content: center; position: relative;
+  }
+  .angular-avatar-hex {
+    width: 108px; height: 108px; border-radius: 50%; overflow: hidden;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    position: absolute;
+  }
+  .angular-avatar-hex img { width: 100%; height: 100%; object-fit: cover; }
+  .angular-name { font-family: 'Raleway', sans-serif; font-size: 52px; font-weight: 900; letter-spacing: -1px; }
+  .angular-a { color: #dd0031; }
+  .angular-title { color: #dd0031; font-size: 14px; letter-spacing: 0.3em; text-transform: uppercase; margin: 12px 0 30px; }
+  .ng-module-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 30px 0; }
+  .ng-module {
+    background: rgba(221,0,49,0.05); border: 1px solid rgba(221,0,49,0.2);
+    border-radius: 4px; padding: 20px; text-align: left;
+    border-top: 3px solid #dd0031; transition: all 0.2s;
+  }
+  .ng-module:hover { background: rgba(221,0,49,0.1); }
+  .ng-module-icon { font-size: 24px; margin-bottom: 12px; }
+  .ng-module h4 { font-size: 14px; font-weight: 700; color: #dd0031; margin-bottom: 6px; }
+  .ng-module p { font-size: 12px; color: #888; line-height: 1.5; }
+  .ng-decorator { font-family: 'Space Mono', monospace; color: #dd0031; font-size: 12px; margin-bottom: 20px; }
+
+  /* ======================== */
+  /* 9. TAILWINDCSS           */
+  /* ======================== */
+  #tailwind {
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+  }
+  .tw-wrap { max-width: 1000px; padding: 40px 20px; }
+  .tw-hero { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+  .tw-avatar-container { position: relative; }
+  .tw-avatar-bg {
+    width: 260px; height: 260px; border-radius: 24px;
+    background: linear-gradient(135deg, #06b6d4, #3b82f6, #8b5cf6);
+    padding: 4px; margin: 0 auto;
+  }
+  .tw-avatar-inner { background: #0f172a; border-radius: 21px; width: 100%; height: 100%; overflow: hidden; }
+  .tw-avatar-inner img { width: 100%; height: 100%; object-fit: cover; }
+  .tw-floating-tag {
+    position: absolute; padding: 8px 16px; border-radius: 8px; font-size: 11px;
+    font-weight: 700; font-family: 'JetBrains Mono', monospace; letter-spacing: 0.05em;
+  }
+  .tw-floating-tag.one { top: 10px; right: 0; background: #06b6d4; color: #fff; transform: rotate(3deg); }
+  .tw-floating-tag.two { bottom: 30px; left: 0; background: #8b5cf6; color: #fff; transform: rotate(-2deg); }
+  .tw-floating-tag.three { bottom: 0; right: 20px; background: #10b981; color: #fff; transform: rotate(1deg); }
+  .tw-name { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 52px; font-weight: 800; line-height: 1; margin-bottom: 16px; }
+  .tw-gradient { background: linear-gradient(to right, #06b6d4, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .tw-desc { color: #94a3b8; line-height: 1.8; font-size: 15px; margin: 16px 0 30px; }
+  .tw-utils { display: flex; gap: 8px; flex-wrap: wrap; margin: 16px 0; }
+  .tw-util {
+    padding: 4px 10px; background: rgba(255,255,255,0.05); border-radius: 4px;
+    font-size: 11px; font-family: 'JetBrains Mono', monospace; color: #94a3b8;
+  }
+
+  /* ======================== */
+  /* 10. RUBY + SINATRA       */
+  /* ======================== */
+  #ruby {
+    background: #1a0808;
+    background-image: radial-gradient(ellipse at 20% 80%, rgba(204,52,45,0.2) 0%, transparent 60%);
+  }
+  .ruby-wrap { max-width: 1000px; padding: 40px 20px; display: grid; grid-template-columns: 380px 1fr; gap: 60px; align-items: center; }
+  .ruby-gem-card {
+    background: linear-gradient(135deg, #2a0a0a, #1a0808);
+    border: 1px solid #cc342d33; border-radius: 12px; padding: 32px; text-align: center;
+  }
+  .ruby-gem { font-size: 60px; margin-bottom: 20px; display: block; }
+  .ruby-avatar { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 3px solid #cc342d; margin: 0 auto 16px; display: block; }
+  .ruby-name-card { font-family: 'Cormorant Garamond', serif; font-size: 36px; color: #fff; margin-bottom: 4px; }
+  .ruby-role-card { color: #cc342d; font-size: 13px; letter-spacing: 0.1em; }
+  .ruby-divider { border: 0; border-top: 1px solid #cc342d33; margin: 20px 0; }
+  .ruby-stat { display: flex; justify-content: space-between; font-size: 13px; color: #999; padding: 6px 0; }
+  .ruby-stat strong { color: #cc342d; }
+  .ruby-right h2 { font-family: 'Cormorant Garamond', serif; font-size: 56px; font-weight: 300; font-style: italic; margin-bottom: 20px; }
+  .ruby-right h2 em { color: #cc342d; font-style: normal; font-weight: 600; }
+  .ruby-desc { color: #888; line-height: 1.9; font-size: 15px; margin-bottom: 30px; }
+  .sinatra-routes { font-family: 'Space Mono', monospace; font-size: 12px; line-height: 2; }
+  .s-get { color: #cc342d; } .s-post { color: #f59e0b; }
+  .s-path { color: #34d399; } .s-block { color: #888; }
+
+  /* ======================== */
+  /* 11. GITHUB PROFILE       */
+  /* ======================== */
+  #github {
+    background: #010409;
+  }
+  .gh-wrap { max-width: 1200px; padding: 40px 20px; }
+  .gh-layout { display: grid; grid-template-columns: 296px 1fr; gap: 32px; }
+  .gh-sidebar { }
+  .gh-avatar-wrap { position: relative; margin-bottom: 16px; }
+  .gh-avatar { width: 260px; height: 260px; border-radius: 50%; object-fit: cover; border: 3px solid #30363d; }
+  .gh-name { font-size: 26px; font-weight: 600; color: #e6edf3; font-family: 'Plus Jakarta Sans', sans-serif; line-height: 1.2; }
+  .gh-username { font-size: 20px; font-weight: 300; color: #7d8590; margin: 4px 0 16px; }
+  .gh-bio { font-size: 14px; color: #e6edf3; line-height: 1.6; margin-bottom: 16px; }
+  .gh-follow-btn {
+    display: block; width: 100%; padding: 5px 12px; background: #21262d;
+    border: 1px solid #363b42; border-radius: 6px; color: #e6edf3;
+    font-size: 14px; text-align: center; cursor: pointer; margin-bottom: 16px; transition: all 0.2s;
+  }
+  .gh-follow-btn:hover { background: #30363d; border-color: #8b949e; }
+  .gh-meta-item { display: flex; align-items: center; gap: 8px; font-size: 14px; color: #7d8590; margin: 8px 0; }
+  .gh-meta-item .icon { width: 16px; text-align: center; }
+  .gh-meta-item a { color: #58a6ff; text-decoration: none; }
+  .gh-section-title { font-size: 14px; font-weight: 600; color: #7d8590; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; margin-top: 16px; }
+  .gh-langs { display: flex; flex-direction: column; gap: 6px; }
+  .gh-lang { display: flex; align-items: center; gap: 8px; font-size: 12px; color: #8b949e; }
+  .gh-lang-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+  .gh-main { }
+  .gh-tabs { display: flex; gap: 0; border-bottom: 1px solid #21262d; margin-bottom: 24px; }
+  .gh-tab {
+    padding: 10px 16px; font-size: 14px; color: #7d8590; cursor: pointer;
+    border-bottom: 2px solid transparent; transition: all 0.2s;
+  }
+  .gh-tab.active { color: #e6edf3; border-bottom-color: #f78166; }
+  .gh-tab .count {
+    background: #30363d; border-radius: 20px; padding: 1px 7px;
+    font-size: 12px; margin-left: 6px; color: #e6edf3;
+  }
+  .gh-contrib-graph { margin-bottom: 30px; }
+  .gh-contrib-title { font-size: 14px; color: #7d8590; margin-bottom: 12px; }
+  .gh-contrib-title strong { color: #e6edf3; }
+  .gh-grid { display: grid; grid-template-columns: repeat(52, 12px); gap: 3px; overflow: hidden; }
+  .gh-cell { width: 12px; height: 12px; border-radius: 2px; }
+  .gh-repos { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .gh-repo {
+    border: 1px solid #30363d; border-radius: 6px; padding: 16px;
+    transition: border-color 0.2s;
+  }
+  .gh-repo:hover { border-color: #58a6ff; }
+  .gh-repo-name { font-size: 14px; font-weight: 600; color: #58a6ff; text-decoration: none; display: block; margin-bottom: 6px; }
+  .gh-repo-desc { font-size: 12px; color: #7d8590; line-height: 1.5; margin-bottom: 12px; }
+  .gh-repo-footer { display: flex; gap: 16px; font-size: 12px; color: #7d8590; align-items: center; }
+  .gh-repo-lang { display: flex; align-items: center; gap: 4px; }
+  .gh-repo-lang::before { content: '●'; }
+  .gh-repo-lang.js::before { color: #f1e05a; }
+  .gh-repo-lang.py::before { color: #3572A5; }
+  .gh-repo-lang.dart::before { color: #00B4AB; }
+  .gh-repo-lang.kt::before { color: #A97BFF; }
+  .gh-pinned-label { font-size: 14px; color: #7d8590; margin-bottom: 16px; display: flex; align-items: center; gap: 6px; }
+
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .react-wrap, .html-grid, .kotlin-wrap, .tw-hero, .ruby-wrap, .gatsby-hero, .gh-layout { grid-template-columns: 1fr; }
+    .next-grid, .ng-module-grid, .flutter-card-row, .gh-repos, .gatsby-card-grid { grid-template-columns: 1fr; }
+    .next-heading { font-size: 48px; }
+    .gh-avatar { width: 160px; height: 160px; }
+    .gh-grid { grid-template-columns: repeat(26, 12px); }
+  }
+
+  /* Dividers between sections */
+  .section-divider {
+    height: 1px; background: linear-gradient(to right, transparent, #333, transparent);
+    margin: 0;
+  }
+
+  /* Scroll animations */
+  .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.7s, transform 0.7s; }
+  .fade-in.visible { opacity: 1; transform: none; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="main-nav">
+  <ul>
+    <li><a href="#bootstrap">Bootstrap</a></li>
+    <li><a href="#react">React JSX</a></li>
+    <li><a href="#htmlcss">HTML+CSS</a></li>
+    <li><a href="#flutter">Flutter</a></li>
+    <li><a href="#gatsby">Gatsby</a></li>
+    <li><a href="#kotlin">Kotlin+Ktor</a></li>
+    <li><a href="#nextjs">Next.js</a></li>
+    <li><a href="#angular">Angular</a></li>
+    <li><a href="#tailwind">TailwindCSS</a></li>
+    <li><a href="#ruby">Ruby+Sinatra</a></li>
+    <li><a href="#github">GitHub Profile</a></li>
+  </ul>
+</nav>
+
+<!-- Gravatar image URLs -->
+<!-- Profile: https://gravatar.com/moekyawaung2026 -->
+<!-- We use the Gravatar profile avatar via profile hash approach, fallback to username display -->
+
+<!-- ============================= -->
+<!-- 1. BOOTSTRAP PORTFOLIO        -->
+<!-- ============================= -->
+<section class="section" id="bootstrap" style="padding-top:80px;">
+  <span class="section-label">01 — Bootstrap Portfolio</span>
+  <div class="bs-container fade-in">
+    <img class="bs-avatar" 
+         src="https://res.cloudinary.com/dye5qpwii/image/upload/v1778527878/IMG_20260430_053105_uef0yr.png" 
+        
+         alt="Moe Kyaw Aung">
+    <h1 class="bs-name">Moe Kyaw Aung</h1>
+    <p class="bs-title">Full Stack Developer & Cloud Engineer</p>
+    <div>
+      <span class="bs-badge primary">React</span>
+      <span class="bs-badge success">Node.js</span>
+      <span class="bs-badge info">Flutter</span>
+      <span class="bs-badge warning">AWS</span>
+      <span class="bs-badge primary">Kotlin</span>
+      <span class="bs-badge success">Next.js</span>
+    </div>
+    <p class="bs-bio">Passionate developer crafting elegant digital experiences. I build scalable web applications and cloud-native solutions that solve real-world problems.</p>
+    <a href="https://github.com/moekyawaung-cloud" class="bs-btn primary">GitHub Profile</a>
+    <a href="#" class="bs-btn outline">Download CV</a>
+    <div class="bs-card">
+      <h5>Technical Skills</h5>
+      <div class="skill-row"><span>JavaScript / TypeScript</span><span>90%</span></div>
+      <div class="bs-progress"><div class="bs-progress-bar" style="width:90%"></div></div>
+      <div class="skill-row"><span>Flutter / Dart</span><span>80%</span></div>
+      <div class="bs-progress"><div class="bs-progress-bar" style="width:80%; background:#198754"></div></div>
+      <div class="skill-row"><span>Kotlin / Ktor</span><span>75%</span></div>
+      <div class="bs-progress"><div class="bs-progress-bar" style="width:75%; background:#ba2dfe"></div></div>
+      <div class="skill-row"><span>Cloud / AWS</span><span>70%</span></div>
+      <div class="bs-progress"><div class="bs-progress-bar" style="width:70%; background:#ffc107"></div></div>
+    </div>
+    <div class="bs-card" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;text-align:center;">
+      <div><div style="font-size:32px;font-weight:700;color:#0d6efd">24+</div><div style="color:#adb5bd;font-size:13px">Projects</div></div>
+      <div><div style="font-size:32px;font-weight:700;color:#198754">3+</div><div style="color:#adb5bd;font-size:13px">Years Exp</div></div>
+      <div><div style="font-size:32px;font-weight:700;color:#0dcaf0">100%</div><div style="color:#adb5bd;font-size:13px">Dedication</div></div>
+    </div>
+  </div>
+</section>
+<div class="section-divider"></div>
+
+<!-- ============================= -->
+<!-- 2. REACT + JSX PORTFOLIO      -->
+<!-- ============================= -->
+<section class="section" id="react" style="padding-top:80px;">
+  <span class="section-label">02 — React + JSX Portfolio</span>
+  <div class="react-wrap fade-in">
+    <div>
+      <div class="react-avatar-ring">
+        <div class="react-avatar-inner">
+          <img src="https://res.cloudinary.com/dye5qpwii/image/upload/v1778527878/IMG_20260430_053105_uef0yr.png" 
+              
+               alt="Moe Kyaw Aung">
+        </div>
+      </div>
+      <div class="component-box">
+        <span class="jsx-keyword">const</span> <span class="jsx-component">Developer</span> = () =&gt; {<br>
+        &nbsp;&nbsp;<span class="jsx-keyword">return</span> (<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="jsx-tag">&lt;Profile</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name=<span class="jsx-string">"Moe Kyaw Aung"</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;role=<span class="jsx-string">"Full Stack Dev"</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;github=<span class="jsx-string">"moekyawaung-cloud"</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="jsx-tag">/&gt;</span><br>
+        &nbsp;&nbsp;);<br>
+        }
+      </div>
+    </div>
+    <div>
+      <p class="react-subtitle">// Hello World 👋</p>
+      <h1 class="react-name">Moe<br><span class="react-highlight">Kyaw Aung</span></h1>
+      <p style="color:#888;line-height:1.8;margin:20px 0;font-size:15px;">Building modern web experiences with React ecosystem. From hooks to server components, I live and breathe JavaScript.</p>
+      <div class="hooks-row">
+        <span class="hook-pill">useState</span>
+        <span class="hook-pill">useEffect</span>
+        <span class="hook-pill">useContext</span>
+        <span class="hook-pill">useMemo</span>
+        <span class="hook-pill">useRef</span>
+        <span class="hook-pill">useReducer</span>
+      </div>
+      <div style="margin-top:24px;display:flex;gap:12px;">
+        <a href="https://github.com/moekyawaung-cloud" style="padding:12px 28px;background:#61dafb;color:#0f0f23;border-radius:8px;font-weight:700;text-decoration:none;font-size:14px;">View GitHub</a>
+        <a href="#" style="padding:12px 28px;border:2px solid #61dafb;color:#61dafb;border-radius:8px;font-weight:700;text-decoration:none;font-size:14px;">Projects</a>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="section-divider"></div>
+
+<!-- ============================= -->
+<!-- 3. HTML + CSS PORTFOLIO       -->
+<!-- ============================= -->
+<section class="section" id="htmlcss" style="padding-top:80px;">
+  <span class="section-label">03 — HTML + CSS Portfolio</span>
+  <div class="html-grid fade-in">
+    <div class="html-card">
+      <img class="html-avatar" 
+           src="https://res.cloudinary.com/dye5qpwii/image/upload/v1778527878/IMG_20260430_053105_uef0yr.png"
+          
+           alt="Moe Kyaw Aung">
+      <div class="html-name">MOE<br>KYAW</div>
+      <div class="html-role">Web Developer</div>
+      <div class="css-property">
+        <span class="css-prop">display</span>: <span class="css-val">flex</span>;<br>
+        <span class="css-prop">passion</span>: <span class="css-val">infinite</span>;<br>
+        <span class="css-prop">coffee</span>: <span class="css-val">required</span>;<br>
+        <span class="css-prop">bugs</span>: <span class="css-val">0 !important</span>;
+      </div>
+      <div class="html-tags">
+        <span class="html-tag">&lt;html&gt;</span>
+        <span class="html-tag">&lt;css&gt;</span>
+        <span class="html-tag">&lt;js&gt;</span>
+        <span class="html-tag">&lt;sass&gt;</span>
+      </div>
+    </div>
+    <div class="html-right">
+      <div style="font-size:12px;letter-spacing:0.3em;color:#ff5a0099;margin-bottom:16px;">CRAFTING THE WEB</div>
+      <h2>PURE<br><span style="color:#ff5a00">HTML</span><br>&amp; CSS<br><span style="color:#555">POWER</span></h2>
+      <p>No frameworks. No build tools. Just clean, semantic HTML5 and expressive CSS3 that makes the web beautiful. Every pixel is intentional.</p>
+      <div style="display:flex;gap:12px;margin-top:20px;">
+        <a href="https://github.com/moekyawaung-cloud" style="padding:12px 28px;background:#ff5a00;color:#fff;text-decoration:none;font-weight:700;font-size:14px;font-family:'Space Mono',monospace;">GITHUB →</a>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="section-divider"></div>
+
+<!-- ============================= -->
+<!-- 4. FLUTTER WEB PORTFOLIO      -->
+<!-- ============================= -->
+<section class="section" id="flutter" style="padding-top:80px;">
+  <span class="section-label">04 — Flutter Web Portfolio</span>
+  <div class="flutter-wrap fade-in">
+    <div class="flutter-fab">
+      <img src="https://res.cloudinary.com/dye5qpwii/image/upload/v1778527878/IMG_20260430_053105_uef0yr.png"
+          
+           alt="Moe Kyaw Aung">
+    </div>
+    <h1 class="flutter-name">Moe Kyaw Aung</h1>
+    <p class="flutter-sub">Flutter Developer · Cross-Platform Specialist</p>
+    <div class="flutter-chips">
+      <span class="flutter-chip">Dart</span>
+      <span class="flutter-chip">Flutter Web</span>
+      <span class="flutter-chip">iOS & Android</span>
+      <span class="flutter-chip">Firebase</span>
+      <span class="flutter-chip">GetX</span>
+      <span class="flutter-chip">Bloc</span>
+    </div>
+    <div class="flutter-card-row">
+      <div class="flutter-card">
+        <div class="flutter-card-icon">📱</div>
+        <h4>Mobile Apps</h4>
+        <p>Cross-platform apps with beautiful native UI for iOS and Android using Flutter.</p>
+      </div>
+      <div class="flutter-card">
+        <div class="flutter-card-icon">🌐</div>
+        <h4>Web Apps</h4>
+        <p>Flutter Web applications with smooth animations and responsive layouts.</p>
+      </div>
+      <div class="flutter-card">
+        <div class="flutter-card-icon">☁️</div>
+        <h4>Cloud Backend</h4>
+        <p>Firebase & cloud integrations for real-time data and authentication.</p>
+      </div>
+    </div>
+    <div style="margin-top:30px;">
+      <a href="https://github.com/moekyawaung-cloud" style="padding:14px 36px;background:linear-gradient(135deg,#0ea5e9,#3b82f6);color:#fff;border-radius:12px;font-weight:700;text-decoration:none;font-size:15px;display:inline-block;">View on GitHub</a>
+    </div>
+  </div>
+</section>
+<div class="section-divider"></div>
+
+<!-- ============================= -->
+<!-- 5. GATSBY.JS PORTFOLIO        -->
+<!-- ============================= -->
+<section class="section" id="gatsby" style="padding-top:80px;">
+  <span class="section-label">05 — Gatsby.js Portfolio</span>
+  <div class="gatsby-container fade-in">
+    <div class="gatsby-hero">
+      <div>
+        <h1 class="gatsby-name"><span class="gatsby-gradient">Moe Kyaw<br>Aung</span></h1>
+        <p class="gatsby-bio">I architect fast, modern web experiences using JAMstack. Gatsby enthusiast, GraphQL lover, and performance obsessive. Building the future one static site at a time.</p>
+        <div class="gatsby-links">
+          <a href="https://github.com/moekyawaung-cloud" class="gatsby-link primary">GitHub</a>
+          <a href="#" class="gatsby-link ghost">Blog</a>
+          <a href="#" class="gatsby-link ghost">Projects</a>
+        </div>
+      </div>
+      <img class="gatsby-avatar"
+           src="https://res.cloudinary.com/dye5qpwii/image/upload/v1778527878/IMG_20260430_053105_uef0yr.png"
+          
+           alt="Moe Kyaw Aung">
+    </div>
+    <div class="gatsby-card-grid">
+      <div class="gatsby-article">
+        <span class="gatsby-tag">React</span><span class="gatsby-tag">Gatsby</span>
+        <h4>E-Commerce Platform</h4>
+        <p>A blazing fast online store built with Gatsby and Shopify, achieving 100 Lighthouse score.</p>
+      </div>
+      <div class="gatsby-article">
+        <span class="gatsby-tag">GraphQL</span><span class="gatsby-tag">Contentful</span>
+        <h4>CMS-Powered Blog</h4>
+        <p>Editorial platform with incremental static generation and real-time preview features.</p>
+      </div>
+      <div class="gatsby-article">
+        <span class="gatsby-tag">Flutter</span><span class="gatsby-tag">Firebase</span>
+        <h4>Mobile Dashboard App</h4>
+        <p>Cross-platform analytics dashboard with real-time data visualization and push notifications.</p>
+      </div>
+      <div class="gatsby-article">
+        <span class="gatsby-tag">Kotlin</span><span class="gatsby-tag">Ktor</span>
+        <h4>REST API Service</h4>
+        <p>High-performance microservice API built with Kotlin and Ktor, deployed on AWS.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="section-divider"></div>
+
+<!-- ============================= -->
+<!-- 6. KOTLIN + KTOR PORTFOLIO    -->
+<!-- ============================= -->
+<section class="section" id="kotlin" style="padding-top:80px;">
+  <span class="section-label">06 — Kotlin + Ktor Portfolio</span>
+  <div class="kotlin-wrap fade-in">
+    <div class="kotlin-terminal">
+      <div class="kotlin-terminal-bar">
+        <span class="t-dot r"></span><span class="t-dot y"></span><span class="t-dot g"></span>
+        <span style="color:#666;font-size:12px;font-family:'JetBrains Mono',monospace;margin-left:10px;">Portfolio.kt</span>
+      </div>
+      <div class="kotlin-code">
+        <span class="k-com">// moekyawaung-cloud</span><br>
+        <span class="k-kw">fun</span> <span class="k-fn">main</span>() {<br>
+        &nbsp;&nbsp;<span class="k-kw">val</span> dev = <span class="k-cls">Developer</span>(<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;name = <span class="k-str">"Moe Kyaw Aung"</span>,<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;skills = <span class="k-fn">listOf</span>(<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="k-str">"Kotlin"</span>, <span class="k-str">"Ktor"</span>,<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="k-str">"Flutter"</span>, <span class="k-str">"React"</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;)<br>
+        &nbsp;&nbsp;)<br><br>
+        &nbsp;&nbsp;<span class="k-fn">embeddedServer</span>(<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="k-cls">Netty</span>, port = <span class="k-type">8080</span><br>
+        &nbsp;&nbsp;).start(wait = <span class="k-kw">true</span>)<br>
+        }<br><br>
+        <span class="k-com">// ✓ Build successful</span><br>
+        <span class="k-com">// ✓ Server running</span>
+      </div>
+    </div>
+    <div class="kotlin-right">
+      <div class="kotlin-logo-wrap">
+        <img class="kotlin-avatar"
+             src="https://res.cloudinary.com/dye5qpwii/image/upload/v1778527878/IMG_20260430_053105_uef0yr.png"
+            
+             alt="Moe Kyaw Aung">
+        <div>
+          <div class="kotlin-name">Moe Kyaw Aung</div>
+          <div class="kotlin-subtitle">Backend · Cloud · Mobile</div>
+        </div>
+      </div>
+      <p class="kotlin-desc">Backend architect specializing in Kotlin-based microservices with Ktor framework. I build type-safe, coroutine-powered APIs that scale effortlessly.</p>
+      <div class="kotlin-skill-grid">
+        <div class="kotlin-skill-item">Kotlin</div>
+        <div class="kotlin-skill-item">Ktor Framework</div>
+        <div class="kotlin-skill-item">Coroutines</div>
+        <div class="kotlin-skill-item">Exposed ORM</div>
+        <div class="kotlin-skill-item">PostgreSQL</div>
+        <div class="kotlin-skill-item">Docker & AWS</div>
+        <div class="kotlin-skill-item">JWT Auth</div>
+        <div class="kotlin-skill-item">REST & GraphQL</div>
+      </div>
+      <div style="margin-top:24px;">
+        <a href="https://github.com/moekyawaung-cloud" style="padding:12px 28px;background:linear-gradient(135deg,#e77e00,#ba2dfe);color:#fff;border-radius:6px;font-weight:700;text-decoration:none;font-size:14px;font-family:'JetBrains Mono',monospace;">github.com/moekyawaung-cloud</a>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="section-divider"></div>
+
+<!-- ============================= -->
+<!-- 7. NEXT.JS PORTFOLIO          -->
+<!-- ============================= -->
+<section class="section" id="nextjs" style="padding-top:80px;align-items:flex-start;">
+  <span class="section-label" style="top:90px;">07 — Next.js Portfolio</span>
+  <div class="next-wrap" style="width:100%;max-width:1000px;padding-top:120px;">
+    <div class="next-hero fade-in">
+      <div class="next-eyebrow">Available for Work</div>
+      <div class="next-heading">
+        <span>MOE</span>
+        <span>KYAW</span>
+        <span class="dim">AUNG</span>
+      </div>
+      <div class="next-meta">
+        <div class="next-avatar-stack">
+          <div class="next-avatar-wrap">
+            <img src="https://res.cloudinary.com/dye5qpwii/image/upload/v1778527878/IMG_20260430_053105_uef0yr.png"
+                
+                 alt="Moe Kyaw Aung">
+          </div>
+        </div>
+        <p class="next-bio">Full Stack Developer based in Myanmar. I build performant web applications with Next.js, ship cross-platform mobile apps with Flutter, and architect backend services with Kotlin + Ktor.</p>
+      </div>
+    </div>
+    <div class="next-grid fade-in">
+      <div class="next-cell">
+        <div class="next-cell-num">01</div>
+        <h4>Web Development</h4>
+        <p>Next.js, React, TypeScript. Server components, edge functions, and optimized performance.</p>
+      </div>
+      <div class="next-cell">
+        <div class="next-cell-num">02</div>
+        <h4>Mobile Apps</h4>
+        <p>Flutter for iOS, Android, and Web. Beautiful, performant cross-platform experiences.</p>
+      </div>
+      <div class="next-cell">
+        <div class="next-cell-num">03</div>
+        <h4>Backend APIs</h4>
+        <p>Kotlin + Ktor microservices. Type-safe, scalable, cloud-native architectures.</p>
+      </div>
+      <div class="next-cell">
+        <div class="next-cell-num">04</div>
+        <h4>Cloud & DevOps</h4>
+        <p>AWS, Docker, CI/CD pipelines. From code to production with confidence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="section-divider"></div>
+
+<!-- ============================= -->
+<!-- 8. ANGULAR PORTFOLIO          -->
+<!-- ============================= -->
+<section class="section" id="angular" style="padding-top:80px;">
+  <span class="section-label">08 — Angular Portfolio</span>
+  <div class="angular-wrap fade-in">
+    <div class="angular-shield">
+      <div class="angular-avatar-hex">
+        <img src="https://res.cloudinary.com/dye5qpwii/image/upload/v1778527878/IMG_20260430_053105_uef0yr.png"
+            
+             alt="Moe Kyaw Aung">
+      </div>
+    </div>
+    <h1 class="angular-name"><span class="angular-a">M</span>oe <span class="angular-a">K</span>yaw <span class="angular-a">A</span>ung</h1>
+    <p class="angular-title">@Component — Developer</p>
+    <div class="ng-decorator">@Injectable({ providedIn: 'root' }) export class DeveloperService { }</div>
+    <p style="color:#aaa;line-height:1.8;max-width:600px;margin:0 auto 30px;font-size:14px;">Enterprise Angular developer with expertise in RxJS, NgRx state management, and Angular Material. I build scalable single-page applications with clean architecture patterns.</p>
+    <div class="ng-module-grid">
+      <div class="ng-module">
+        <div class="ng-module-icon">⚡</div>
+        <h4>@NgModule</h4>
+        <p>Component-driven architecture with lazy loading and route guards.</p>
+      </div>
+      <div class="ng-module">
+        <div class="ng-module-icon">🔄</div>
+        <h4>RxJS Streams</h4>
+        <p>Reactive programming with observables, subjects, and operators.</p>
+      </div>
+      <div class="ng-module">
+        <div class="ng-module-icon">🏪</div>
+        <h4>NgRx Store</h4>
+        <p>Predictable state management with actions, reducers, and effects.</p>
+      </div>
+    </div>
+    <a href="https://github.com/moekyawaung-cloud" style="display:inline-block;padding:12px 32px;background:#dd0031;color:#fff;border-radius:4px;font-weight:700;text-decoration:none;margin-top:20px;">View GitHub →</a>
+  </div>
+</section>
+<div class="section-divider"></div>
+
+<!-- ============================= -->
+<!-- 9. TAILWINDCSS PORTFOLIO      -->
+<!-- ============================= -->
+<section class="section" id="tailwind" style="padding-top:80px;">
+  <span class="section-label">09 — TailwindCSS Portfolio</span>
+  <div class="tw-wrap fade-in">
+    <div class="tw-hero">
+      <div>
+        <p style="font-size:13px;letter-spacing:0.2em;color:#64748b;text-transform:uppercase;margin-bottom:20px;">className="developer"</p>
+        <h1 class="tw-name">Moe <span class="tw-gradient">Kyaw Aung</span></h1>
+        <p class="tw-desc">I write utility-first CSS and build lightning-fast interfaces. Tailwind makes me think in design tokens, not pixel pushing. The result? Beautiful, consistent UIs at speed.</p>
+        <div class="tw-utils">
+          <span class="tw-util">flex</span>
+          <span class="tw-util">grid</span>
+          <span class="tw-util">rounded-2xl</span>
+          <span class="tw-util">shadow-xl</span>
+          <span class="tw-util">bg-gradient-to-r</span>
+          <span class="tw-util">text-transparent</span>
+          <span class="tw-util">backdrop-blur</span>
+          <span class="tw-util">animate-pulse</span>
+          <span class="tw-util">hover:scale-105</span>
+          <span class="tw-util">transition-all</span>
+        </div>
+        <div style="margin-top:28px;display:flex;gap:12px;">
+          <a href="https://github.com/moekyawaung-cloud" style="padding:12px 28px;background:linear-gradient(to right,#06b6d4,#8b5cf6);color:#fff;border-radius:8px;font-weight:700;text-decoration:none;font-size:14px;">GitHub</a>
+          <a href="#" style="padding:12px 28px;border:1px solid #334155;color:#94a3b8;border-radius:8px;font-weight:600;text-decoration:none;font-size:14px;">Projects</a>
+        </div>
+      </div>
+      <div class="tw-avatar-container">
+        <div class="tw-avatar-bg">
+          <div class="tw-avatar-inner">
+            <img src="https://res.cloudinary.com/dye5qpwii/image/upload/v1778527878/IMG_20260430_053105_uef0yr.png"
+                
+                 alt="Moe Kyaw Aung"
+                 style="width:100%;height:100%;object-fit:cover;">
+          </div>
+        </div>
+        <span class="tw-floating-tag one">text-sky-400</span>
+        <span class="tw-floating-tag two">bg-violet-600</span>
+        <span class="tw-floating-tag three">rounded-3xl</span>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="section-divider"></div>
+
+<!-- ============================= -->
+<!-- 10. RUBY + SINATRA PORTFOLIO  -->
+<!-- ============================= -->
+<section class="section" id="ruby" style="padding-top:80px;">
+  <span class="section-label">10 — Ruby + Sinatra Portfolio</span>
+  <div class="ruby-wrap fade-in">
+    <div class="ruby-gem-card">
+      <span class="ruby-gem">💎</span>
+      <img class="ruby-avatar"
+           src="https://res.cloudinary.com/dye5qpwii/image/upload/v1778527878/IMG_20260430_053105_uef0yr.png"
+          
+           alt="Moe Kyaw Aung">
+      <div class="ruby-name-card">Moe Kyaw Aung</div>
+      <div class="ruby-role-card">Ruby Artisan</div>
+      <hr class="ruby-divider">
+      <div class="ruby-stat"><span>GitHub</span><strong>moekyawaung-cloud</strong></div>
+      <div class="ruby-stat"><span>Status</span><strong>Open to Work</strong></div>
+      <div class="ruby-stat"><span>Location</span><strong>Myanmar 🇲🇲</strong></div>
+      <div class="ruby-stat"><span>Gems Built</span><strong>12+</strong></div>
+    </div>
+    <div class="ruby-right">
+      <h2>Code that<br><em>sings</em> in<br>Ruby</h2>
+      <p class="ruby-desc">Elegant, expressive Ruby code paired with the minimalist beauty of Sinatra. I believe software should be a joy to read, a pleasure to maintain, and a delight to use.</p>
+      <div class="sinatra-routes">
+        <span class="s-get">get</span> <span class="s-path">'/portfolio'</span> <span class="s-kw">do</span><br>
+        &nbsp;&nbsp;<span class="s-block">erb :index, locals: { dev: @moe }</span><br>
+        <span class="s-block">end</span><br><br>
+        <span class="s-post">post</span> <span class="s-path">'/contact'</span> <span class="s-kw">do</span><br>
+        &nbsp;&nbsp;<span class="s-block">@message = params[:message]</span><br>
+        &nbsp;&nbsp;<span class="s-block">Mailer.send(@message)</span><br>
+        <span class="s-block">end</span><br><br>
+        <span class="s-get">get</span> <span class="s-path">'/github'</span> <span class="s-kw">do</span><br>
+        &nbsp;&nbsp;<span class="s-block">redirect 'github.com/moekyawaung-cloud'</span><br>
+        <span class="s-block">end</span>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="section-divider"></div>
+
+<!-- ============================= -->
+<!-- 11. GITHUB PROFILE STYLE      -->
+<!-- ============================= -->
+<section class="section" id="github" style="padding-top:80px;align-items:flex-start;">
+  <span class="section-label" style="top:90px;">11 — GitHub Profile Style</span>
+  <div class="gh-wrap" style="width:100%;padding-top:100px;">
+    <div class="gh-layout fade-in">
+      <!-- Sidebar -->
+      <div class="gh-sidebar">
+        <div class="gh-avatar-wrap">
+          <img class="gh-avatar"
+               src="https://res.cloudinary.com/dye5qpwii/image/upload/v1778527878/IMG_20260430_053105_uef0yr.png"
+              
+               alt="Moe Kyaw Aung">
+        </div>
+        <div class="gh-name">Moe Kyaw Aung</div>
+        <div class="gh-username">moekyawaung-cloud</div>
+        <div class="gh-bio">Full Stack Developer 🚀 Building with React, Flutter, Kotlin & Next.js. Cloud ☁️ enthusiast. Open source contributor.</div>
+        <button class="gh-follow-btn">Follow</button>
+        <div style="font-size:14px;color:#7d8590;margin-bottom:12px;">
+          <span style="color:#e6edf3;font-weight:600">128</span> followers &nbsp;·&nbsp;
+          <span style="color:#e6edf3;font-weight:600">64</span> following
+        </div>
+        <div class="gh-meta-item"><span class="icon">🏢</span> <span>Cloud Developer</span></div>
+        <div class="gh-meta-item"><span class="icon">📍</span> <span>Myanmar</span></div>
+        <div class="gh-meta-item"><span class="icon">🔗</span> <a href="https://github.com/moekyawaung-cloud">github.com/moekyawaung-cloud</a></div>
+        <div class="gh-meta-item"><span class="icon">🐦</span> <span>@moekyawaung</span></div>
+
+        <div class="gh-section-title">Languages</div>
+        <div class="gh-langs">
+          <div class="gh-lang"><div class="gh-lang-dot" style="background:#f1e05a"></div> JavaScript <span style="margin-left:auto;color:#555">35%</span></div>
+          <div class="gh-lang"><div class="gh-lang-dot" style="background:#A97BFF"></div> Kotlin <span style="margin-left:auto;color:#555">25%</span></div>
+          <div class="gh-lang"><div class="gh-lang-dot" style="background:#00B4AB"></div> Dart <span style="margin-left:auto;color:#555">20%</span></div>
+          <div class="gh-lang"><div class="gh-lang-dot" style="background:#3572A5"></div> Python <span style="margin-left:auto;color:#555">12%</span></div>
+          <div class="gh-lang"><div class="gh-lang-dot" style="background:#e34c26"></div> HTML <span style="margin-left:auto;color:#555">8%</span></div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="gh-main">
+        <div class="gh-tabs">
+          <div class="gh-tab active">Overview</div>
+          <div class="gh-tab">Repositories <span class="count">24</span></div>
+          <div class="gh-tab">Projects <span class="count">8</span></div>
+          <div class="gh-tab">Stars <span class="count">142</span></div>
+        </div>
+
+        <!-- Contribution Graph -->
+        <div class="gh-contrib-graph">
+          <div class="gh-contrib-title"><strong id="contrib-count">847</strong> contributions in the last year</div>
+          <div class="gh-grid" id="contrib-grid"></div>
+        </div>
+
+        <!-- Pinned Repos -->
+        <div class="gh-pinned-label">📌 Pinned repositories</div>
+        <div class="gh-repos">
+          <div class="gh-repo">
+            <a href="https://github.com/moekyawaung-cloud" class="gh-repo-name">📦 cloud-portfolio</a>
+            <div class="gh-repo-desc">Personal portfolio built with Next.js and deployed on Vercel. Features dark mode and animations.</div>
+            <div class="gh-repo-footer">
+              <span class="gh-repo-lang js">JavaScript</span>
+              <span>⭐ 24</span>
+              <span>🍴 6</span>
+            </div>
+          </div>
+          <div class="gh-repo">
+            <a href="https://github.com/moekyawaung-cloud" class="gh-repo-name">📱 flutter-starter</a>
+            <div class="gh-repo-desc">Production-ready Flutter starter with BLoC pattern, routing, and Firebase integration.</div>
+            <div class="gh-repo-footer">
+              <span class="gh-repo-lang dart">Dart</span>
+              <span>⭐ 48</span>
+              <span>🍴 12</span>
+            </div>
+          </div>
+          <div class="gh-repo">
+            <a href="https://github.com/moekyawaung-cloud" class="gh-repo-name">⚡ ktor-api-starter</a>
+            <div class="gh-repo-desc">Kotlin + Ktor REST API boilerplate with JWT auth, Exposed ORM, and Docker support.</div>
+            <div class="gh-repo-footer">
+              <span class="gh-repo-lang kt">Kotlin</span>
+              <span>⭐ 36</span>
+              <span>🍴 9</span>
+            </div>
+          </div>
+          <div class="gh-repo">
+            <a href="https://github.com/moekyawaung-cloud" class="gh-repo-name">🤖 ml-experiments</a>
+            <div class="gh-repo-desc">Machine learning experiments and notebooks. NLP, computer vision, and data analysis.</div>
+            <div class="gh-repo-footer">
+              <span class="gh-repo-lang py">Python</span>
+              <span>⭐ 18</span>
+              <span>🍴 4</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
